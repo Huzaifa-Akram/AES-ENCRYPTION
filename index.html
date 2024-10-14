@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Encryption</title>
+    <link rel="stylesheet" href="styles.css">
+    <audio id="click-sound" src="click.wav" preload="auto"></audio>
+    <audio id="typing-sound" src="typing.wav" preload="auto"></audio>
+
+</head>
+<body>
+    <h1>Complete AES Encryption Process</h1>
+    <p class="copyright">@<a href="https://www.linkedin.com/in/huzaifa-akram-68b223326/" target="_blank"">zaifa</a> 2024</p>
+    <div class="input-group">
+        <label for="initialKey">Enter 128, 192 or 256 bit key:</label>
+        <input type="text" id="initialKey" placeholder="e.g., SECRETKY">
+    </div>
+    <div class="input-group">
+        <label for="message">Enter message( message should same size as key):</label>
+        <input type="text" id="message" placeholder="e.g., HELLODES">
+    </div>
+    <button onclick="encryptAES()">Encrypt Message</button>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
